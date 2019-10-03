@@ -1,14 +1,19 @@
 package com.mvvm.demo.view.main
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import com.mvvm.demo.R
+import kotlinx.android.synthetic.main.login_fragment.*
 
 class LoginFragment : Fragment() {
+
+    private val activityViewModel by lazy {
+        ViewModelProviders.of(requireActivity())[MainViewModel::class.java]
+    }
 
     private lateinit var viewModel: LoginViewModel
 
@@ -22,7 +27,7 @@ class LoginFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
-        // TODO: Use the ViewModel
+        tvContent.text = activityViewModel.userName
     }
 
 }

@@ -7,6 +7,7 @@
     tools:context="com.mvvm.demo.view.main.LoginFragment">
 
     <TextView
+        android:id="@+id/tvContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
