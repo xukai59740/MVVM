@@ -1,7 +1,7 @@
 package com.mvvm.demo.view.main
 
-import androidx.lifecycle.ViewModel
+import com.mvvm.demo.view.common.base.BaseViewModel
 
-class LoginViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+class LoginViewModel : BaseViewModel() {
+
 }

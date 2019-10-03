@@ -4,4 +4,7 @@ import com.mvvm.demo.view.common.base.BaseViewModel
 
 class MainViewModel(val userName: String) : BaseViewModel() {
 
+    override fun init() {
+        super.init()
+    }
 }
