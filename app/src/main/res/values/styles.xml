@@ -1,11 +1,16 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:homeAsUpIndicator">@drawable/ic_24_brand_arrow_left</item>
+        <item name="homeAsUpIndicator">@drawable/ic_24_brand_arrow_left</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Toolbar-->
+    <style name="TextAppearance.ActionBar.Bold.Title" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
 </resources>
