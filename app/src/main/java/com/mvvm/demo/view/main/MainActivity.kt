@@ -1,6 +1,8 @@
-package com.mvvm.demo
+package com.mvvm.demo.view.main
 
 import androidx.appcompat.app.ActionBar
+import androidx.navigation.findNavController
+import com.mvvm.demo.R
 import com.mvvm.demo.view.common.base.BaseActivity
 import kotlinx.android.synthetic.main.default_app_bar.*
 
@@ -19,7 +21,7 @@ class MainActivity : BaseActivity() {
         with(actionBar) {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
-            title = "Main Screen"
+            title = findNavController(R.id.contentFragment).currentDestination?.label
         }
     }
 
