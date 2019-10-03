@@ -32,6 +32,7 @@ buildscript {
     ext.ext_junit_version = '1.0.0'
     ext.test_version = '1.2.0'
     ext.kotlin_core_version = '1.0.1'
+    ext.multidex_version = '2.0.1'
     ext.appcompat_version = '1.0.2'
     ext.material_version = '1.0.0'
     ext.navigation_version = '1.0.0-alpha07'
