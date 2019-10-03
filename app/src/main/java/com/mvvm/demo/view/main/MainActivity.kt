@@ -12,7 +12,10 @@ class MainActivity : BaseSimpleActivity<MainViewModel>() {
     override fun getContentResource() = R.layout.activity_main
 
     override fun buildViewModel(): MainViewModel {
-        return ViewModelProviders.of(this)[MainViewModel::class.java]
+        return ViewModelProviders.of(
+            this,
+            MainViewModelFactory("Kevin.Xu")
+        )[MainViewModel::class.java]
     }
 
     override fun getActionToolbar() = toolbar
