@@ -14,7 +14,8 @@ class LoginFragment : BaseSimpleFragment<LoginViewModel>() {
     override fun getContentResource() = R.layout.login_fragment
 
     override fun buildViewModel(): LoginViewModel {
-        return ViewModelProviders.of(this).get(LoginViewModel::class.java)
+        val factory = LoginViewModelFactory()
+        return ViewModelProviders.of(this, factory).get(LoginViewModel::class.java)
     }
 
     override fun initLiveDataObservers() {

@@ -1,6 +1,7 @@
 package com.mvvm.demo.view.common.base
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.annotation.CallSuper
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
@@ -27,4 +28,13 @@ abstract class BaseActivity : AppCompatActivity() {
 
     protected open fun configureActionBar(actionBar: ActionBar) = Unit
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
