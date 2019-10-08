@@ -11,6 +11,7 @@ abstract class BaseSimpleFragment<T : BaseViewModel> : BaseFragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        viewModel.init()
         initLiveDataObservers()
     }
 

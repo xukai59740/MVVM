@@ -3,6 +3,7 @@ package com.mvvm.demo.data.authentication
 import com.mvvm.demo.data.common.dagger.NetworkModule
 import com.mvvm.demo.data.preference.Preference
 import com.mvvm.demo.data.preference.PreferenceModule
+import com.mvvm.demo.domain.authentication.AuthenticationRepository
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit

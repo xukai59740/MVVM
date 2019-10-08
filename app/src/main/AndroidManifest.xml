@@ -4,6 +4,9 @@
     package="com.mvvm.demo">
 
     <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +15,7 @@
         android:name="com.mvvm.demo.view.common.App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.main.MainActivity">
             <intent-filter>

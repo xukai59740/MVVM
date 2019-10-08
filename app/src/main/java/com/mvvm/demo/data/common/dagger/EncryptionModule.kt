@@ -1,6 +1,5 @@
 package com.mvvm.demo.data.common.dagger
 
-import com.mvvm.demo.data.common.CryptoHelper
 import com.mvvm.demo.view.common.App
 import dagger.Module
 import dagger.Provides

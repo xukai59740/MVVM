@@ -47,8 +47,7 @@ android {
             dimension "environment"
             applicationIdSuffix ".dev"
             resValue "string", "app_name", "MVVM DEMO (DEV)"
-            buildConfigField 'String', 'API_BASE_URL', '"http://algo-api-dev.lionparcel.com/v1/"'
-            buildConfigField 'String', 'API_MAGENTO_URL', '"http://shop-stg.lionparcel.com/rest/"'
+            buildConfigField 'String', 'API_BASE_URL', '"https://algo-api.lionparcel.com/v1/"'
             versionCode buildVersionCode("dev")
             versionName buildVersionName("dev")
         }
@@ -57,7 +56,6 @@ android {
             dimension "environment"
             resValue "string", "app_name", "MVVM DEMO"
             buildConfigField 'String', 'API_BASE_URL', '"https://algo-api.lionparcel.com/v1/"'
-            buildConfigField 'String', 'API_MAGENTO_URL', '"http://shop.lionparcel.com/rest/"'
         }
     }
 
