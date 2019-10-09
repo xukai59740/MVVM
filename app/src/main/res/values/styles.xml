@@ -10,7 +10,43 @@
 
     <!--Toolbar-->
     <style name="TextAppearance.ActionBar.Bold.Title" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:fontFamily">@font/hansans_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--TextAppearance-->
+    <style name="TextAppearance.Regular" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/hansans_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.Normal" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/hansans_normal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.Medium" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/hansans_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.Light" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/hansans_light</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.Heavy" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/hansans_heavy</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.ExtraLight" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/hansans_extra_light</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.Bold" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/hansans_bold</item>
         <item name="android:includeFontPadding">false</item>
     </style>
 </resources>
