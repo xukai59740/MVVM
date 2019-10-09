@@ -14,14 +14,18 @@ class AccessTokenAuthenticator(
     }
 
     override fun authenticate(route: Route?, response: okhttp3.Response?): okhttp3.Request? {
-        // todo : preference
-        val accessToken = ""
-        val tokenType = ""
         val request = response?.request()?.newBuilder()?.apply {
-            addHeader(REQUEST_TOKEN_KEY, "$tokenType $accessToken")
+            //add token
+            getAccessToken()?.let {
+                val tokenType = "bear"
+                addHeader(REQUEST_TOKEN_KEY, "$tokenType $it")
+            }
         }?.build() ?: throw NetworkErrorException("Null response")
-
         return request.newBuilder()?.build()
+    }
+
+    private fun getAccessToken(): String? {
+        return preference.getAccessToken()?.value
     }
 
 }
