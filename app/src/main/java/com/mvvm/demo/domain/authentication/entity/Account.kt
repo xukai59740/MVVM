@@ -13,7 +13,8 @@ import kotlinx.android.parcel.Parcelize
 @Entity(tableName = TABLE_NAME)
 data class Account(
     @ColumnInfo(name = COLUMN_ID) @PrimaryKey val id: Long,
-    @ColumnInfo(name = COLUMN_MOBILE) val mobile: String
+    @ColumnInfo(name = COLUMN_MOBILE) val mobile: String,
+    @ColumnInfo(name = "name") val name: String
 ) : Parcelable {
 
     companion object {

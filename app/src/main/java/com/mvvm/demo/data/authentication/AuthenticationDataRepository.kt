@@ -16,11 +16,11 @@ class AuthenticationDataRepository @Inject constructor(
 
     override fun login(mobile: String, pwd: String): Single<Account> {
         return api.login().map {
-            Account(123, mobile)
+            Account(123, mobile, "name")
         }.onErrorResumeNext {
             preference.putAccessToken(AccessToken("test access token"))
-            accountDao.insert(Account(123, mobile))
-            Single.just(Account(123, mobile))
+            accountDao.insert(Account(123, mobile, "name"))
+            Single.just(Account(123, mobile, "name"))
         }
     }
 }
