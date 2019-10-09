@@ -1,4 +1,4 @@
-package com.mvvm.demo.domain.common.usecase
+package com.mvvm.demo.domain.common.base
 
 import com.google.gson.Gson
 import com.mvvm.demo.data.common.entity.ErrorResponse

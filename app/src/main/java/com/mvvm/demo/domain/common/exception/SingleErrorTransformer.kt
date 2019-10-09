@@ -1,6 +1,6 @@
 package com.lionparcel.services.consumer.domain.common
 
-import com.mvvm.demo.domain.common.usecase.ErrorHelper
+import com.mvvm.demo.domain.common.base.ErrorHelper
 import io.reactivex.Single
 import io.reactivex.SingleSource
 import io.reactivex.SingleTransformer

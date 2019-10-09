@@ -1,7 +1,7 @@
 package com.mvvm.demo.data.preference
 
 import android.content.SharedPreferences
-import com.mvvm.demo.data.common.dagger.CryptoHelper
+import com.mvvm.demo.data.common.CryptoHelper
 import com.mvvm.demo.domain.authentication.entity.AccessToken
 
 class PreferenceImpl(

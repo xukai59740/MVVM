@@ -1,4 +1,4 @@
-package com.mvvm.demo.data.common.dagger
+package com.mvvm.demo.data.common
 
 import android.content.Context
 import com.yakivmospan.scytale.Crypto

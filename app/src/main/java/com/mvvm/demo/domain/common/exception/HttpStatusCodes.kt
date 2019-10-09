@@ -1,4 +1,4 @@
-package com.mvvm.demo.domain.common.usecase
+package com.mvvm.demo.domain.common.base
 
 object HttpStatusCodes {
     const val BAD_REQUEST = 400
